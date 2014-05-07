@@ -14,7 +14,7 @@
 		DC068533191297490027EAC0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC068532191297490027EAC0 /* main.m */; };
 		DC068537191297490027EAC0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC068536191297490027EAC0 /* AppDelegate.m */; };
 		DC06853A191297490027EAC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC068538191297490027EAC0 /* Main.storyboard */; };
-		DC06853D191297490027EAC0 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC06853C191297490027EAC0 /* FirstViewController.m */; };
+		DC06853D191297490027EAC0 /* CurrentLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC06853C191297490027EAC0 /* CurrentLocationViewController.m */; };
 		DC068540191297490027EAC0 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC06853F191297490027EAC0 /* SecondViewController.m */; };
 		DC068542191297490027EAC0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC068541191297490027EAC0 /* Images.xcassets */; };
 		DC068549191297490027EAC0 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC068548191297490027EAC0 /* XCTest.framework */; };
@@ -22,6 +22,8 @@
 		DC06854B191297490027EAC0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC06852A191297490027EAC0 /* UIKit.framework */; };
 		DC068553191297490027EAC0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DC068551191297490027EAC0 /* InfoPlist.strings */; };
 		DC068555191297490027EAC0 /* MyLocationsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC068554191297490027EAC0 /* MyLocationsTests.m */; };
+		DC06855F1912A0E30027EAC0 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC06855E1912A0E30027EAC0 /* CoreLocation.framework */; };
+		DC068562191903400027EAC0 /* LocationDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC068561191903400027EAC0 /* LocationDetailsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,8 +48,8 @@
 		DC068535191297490027EAC0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DC068536191297490027EAC0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		DC068539191297490027EAC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DC06853B191297490027EAC0 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		DC06853C191297490027EAC0 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		DC06853B191297490027EAC0 /* CurrentLocationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CurrentLocationViewController.h; sourceTree = "<group>"; };
+		DC06853C191297490027EAC0 /* CurrentLocationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CurrentLocationViewController.m; sourceTree = "<group>"; };
 		DC06853E191297490027EAC0 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		DC06853F191297490027EAC0 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		DC068541191297490027EAC0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -56,6 +58,9 @@
 		DC068550191297490027EAC0 /* MyLocationsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyLocationsTests-Info.plist"; sourceTree = "<group>"; };
 		DC068552191297490027EAC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DC068554191297490027EAC0 /* MyLocationsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyLocationsTests.m; sourceTree = "<group>"; };
+		DC06855E1912A0E30027EAC0 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		DC068560191903400027EAC0 /* LocationDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationDetailsViewController.h; sourceTree = "<group>"; };
+		DC068561191903400027EAC0 /* LocationDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationDetailsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC06855F1912A0E30027EAC0 /* CoreLocation.framework in Frameworks */,
 				DC068529191297490027EAC0 /* CoreGraphics.framework in Frameworks */,
 				DC06852B191297490027EAC0 /* UIKit.framework in Frameworks */,
 				DC068527191297490027EAC0 /* Foundation.framework in Frameworks */,
@@ -104,6 +110,7 @@
 		DC068525191297490027EAC0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DC06855E1912A0E30027EAC0 /* CoreLocation.framework */,
 				DC068526191297490027EAC0 /* Foundation.framework */,
 				DC068528191297490027EAC0 /* CoreGraphics.framework */,
 				DC06852A191297490027EAC0 /* UIKit.framework */,
@@ -118,12 +125,14 @@
 				DC068535191297490027EAC0 /* AppDelegate.h */,
 				DC068536191297490027EAC0 /* AppDelegate.m */,
 				DC068538191297490027EAC0 /* Main.storyboard */,
-				DC06853B191297490027EAC0 /* FirstViewController.h */,
-				DC06853C191297490027EAC0 /* FirstViewController.m */,
+				DC06853B191297490027EAC0 /* CurrentLocationViewController.h */,
+				DC06853C191297490027EAC0 /* CurrentLocationViewController.m */,
 				DC06853E191297490027EAC0 /* SecondViewController.h */,
 				DC06853F191297490027EAC0 /* SecondViewController.m */,
 				DC068541191297490027EAC0 /* Images.xcassets */,
 				DC06852D191297490027EAC0 /* Supporting Files */,
+				DC068560191903400027EAC0 /* LocationDetailsViewController.h */,
+				DC068561191903400027EAC0 /* LocationDetailsViewController.m */,
 			);
 			path = MyLocations;
 			sourceTree = "<group>";
@@ -256,8 +265,9 @@
 			files = (
 				DC068540191297490027EAC0 /* SecondViewController.m in Sources */,
 				DC068537191297490027EAC0 /* AppDelegate.m in Sources */,
-				DC06853D191297490027EAC0 /* FirstViewController.m in Sources */,
+				DC06853D191297490027EAC0 /* CurrentLocationViewController.m in Sources */,
 				DC068533191297490027EAC0 /* main.m in Sources */,
+				DC068562191903400027EAC0 /* LocationDetailsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
